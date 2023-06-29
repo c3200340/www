@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .header_logo{
+            text-align: center;
+        }
+        .header_navlist{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            border-top: 1px gray;
+            border-bottom: 1px gray;
+        }
+        .header_navlist li{
+            margin: 16px 28px;
+           list-style: none;
+        }
+        .header_mainvisual{
+            margin: 40px;
+        }
+        .header_mainvisual img{
+            width: 100%;
+            border: 10px grey;
+            box-sizing: border-box;
+        }
+
+        main{
+            margin: 0;
+        }
+        .main_content h2{
+            font-family: serif;
+            font-weight: normal;
+            text-align: center;
+        }
+        .main_content_body{
+            text-align: center;
+        }
+        .main_goodpoints{
+            display: flex;
+            justify-content: space-between;
+        }
+        .main_goodpoints section{
+            width: 31%;
+        }
+        .main_goodpoints section img{
+            width: 100%;
+        }
+
+        footer{
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header_logo">
+                <img src="images/LUXE.png" alt="">
+            </div>
+            <ul class="header_navlist">
+                <li>HOME</li>
+                <li>CONCEPT</li>
+                <li>STAY</li>
+                <li>PAGE SAMPLE</li>
+                <li>BLOG</li>
+                <li>CONTACT</li>
+                <li class="float_none">DOWNLOAD</li>
+            </ul>
+        </nav>
+        <div class="header_mainvisual">
+            <img src="images/front.png" alt="">
+        </div>
+    </header>
+
+    <main>
+        <div class="main_content">
+            <h2>Stay in a Stylish and Luxurious Design Space</h2>
+                <p class="main_content_body">The Scenery, and Location Are Perfect, and the Food Is Excellent. This Resort Hotel
+                    Is Dedicated to the Enjoyment of Nature's Bounty and the Pursuit of Fine Cuisine.
+                </p>
+            <div class="main_goodpoints">
+                <section>
+                    <img src="images/concept.png" alt="">
+                        <h3>Concept</h3>
+                        <p>Stay in a stylish and luxurious design space</p>
+                </section>
+                <section class="main_goodpoint_02">
+                    <img src="images/hosuptality.png" alt="">
+                        <h3>Hosuptality</h3>
+                        <p>A ture resort life, where the richness of nature heals both body and soul</p>
+                </section>
+                <section>
+                    <img src="images/restaurant.png" alt="">
+                        <h3>Restaurant</h3>
+                        <p>The hotel is dedicated to the enjoyment of nature's bounty and the pursuit of gastronomy</p>
+                </section>
+                <div class="clear_both"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <article class="news">
+            <h2>News Information <span class="news_older">older news</span></h2>
+
+            <ul>
+                <li><span class="news_date">2020.12.18</span><span class="news_text">Update information on "LUXE (tcd022)"</span></li>
+                <li><span class="news_date">2020.09.18</span><span class="news_text"></span>Custom post ype "Announcement" in available.</li>
+                <li><span class="news_date">2020.08.12</span><span class="news_text">WordPress theme "LUXE (tcd022)" is released</span></li>
+            </ul>
+        </article>
+        
+        <div>
+            <img src="images/unnder.png" alt="">
+        </div>
+    </footer>
+    
+</body>
+</html>
