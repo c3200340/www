@@ -9,6 +9,7 @@
         body{
             margin: 0;
         }
+        /*ヘッダー*/
         .header_logo{
             text-align: center;
         }
@@ -16,24 +17,26 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            border-top: 1px gray;
-            border-bottom: 1px gray;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
         }
         .header_navlist li{
             margin: 16px 28px;
            list-style: none;
         }
+
         .header_mainvisual{
             margin: 40px;
         }
         .header_mainvisual img{
             width: 100%;
-            border: 10px grey;
+            border: 10px solid grey;
             box-sizing: border-box;
         }
 
+        /*メインコンテンツ*/
         main{
-            margin: 0;
+            margin: 0 40px;
         }
         .main_content h2{
             font-family: serif;
@@ -54,18 +57,56 @@
             width: 100%;
         }
 
+        /*フッター*/
         footer{
             display: flex;
             justify-content: space-between;
             margin: 40px 40px 0;
         }
+        
+        /*ニュース*/
+        .news{
+            width: 65.5%;
+        }
+        .news_title{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .news_title h2{
+            margin: 0;
+        }
+
+        .news_list{
+            list-style: none;
+            padding: 0;
+            border-top: 1px dotted black;
+        }
+        .news_list li{
+            border-bottom: 1px dotted black;
+            padding: 12px 0;
+        }
+        .news_date{
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        
+        /*バナー*/
+        .banner{
+            width: 31%;
+        }
+        .banner img{
+            width: 100%;
+        }
+
     </style>
 </head>
+
 <body>
     <header>
         <nav>
             <div class="header_logo">
-                <img src="images/LUXE.png" alt="">
+                <img src="images/LUXE.png" alt="ロゴ">
             </div>
             <ul class="header_navlist">
                 <li>HOME</li>
@@ -74,54 +115,56 @@
                 <li>PAGE SAMPLE</li>
                 <li>BLOG</li>
                 <li>CONTACT</li>
-                <li class="float_none">DOWNLOAD</li>
+                <li>DOWNLOAD</li>
             </ul>
         </nav>
         <div class="header_mainvisual">
-            <img src="images/front.png" alt="">
+            <img src="images/front.png" alt="メインビジュアル">
         </div>
     </header>
 
     <main>
-        <div class="main_content">
+        <article class="main_content">
             <h2>Stay in a Stylish and Luxurious Design Space</h2>
-                <p class="main_content_body">The Scenery, and Location Are Perfect, and the Food Is Excellent. This Resort Hotel
-                    Is Dedicated to the Enjoyment of Nature's Bounty and the Pursuit of Fine Cuisine.
-                </p>
+            <p class="main_content_body">The Scenery, and Location Are Perfect, and the Food Is Excellent. This Resort Hotel
+            Is Dedicated to the Enjoyment of Nature's Bounty and the Pursuit of Fine Cuisine.</p>
+
             <div class="main_goodpoints">
                 <section>
-                    <img src="images/concept.png" alt="">
+                    <img src="images/concept.png" alt="良いところ_1">
                         <h3>Concept</h3>
                         <p>Stay in a stylish and luxurious design space</p>
                 </section>
-                <section class="main_goodpoint_02">
-                    <img src="images/hosuptality.png" alt="">
+                <section>
+                    <img src="images/hosuptality.png" alt="良いところ_2">
                         <h3>Hosuptality</h3>
                         <p>A ture resort life, where the richness of nature heals both body and soul</p>
                 </section>
                 <section>
-                    <img src="images/restaurant.png" alt="">
+                    <img src="images/restaurant.png" alt="良いところ_3">
                         <h3>Restaurant</h3>
                         <p>The hotel is dedicated to the enjoyment of nature's bounty and the pursuit of gastronomy</p>
                 </section>
-                <div class="clear_both"></div>
             </div>
-        </div>
+        </article>
     </main>
 
     <footer>
-        <article class="news">
-            <h2>News Information <span class="news_older">older news</span></h2>
+        <div class="news">
+            <div class="news_title">
+                <h2>News Information</h2>
+                <span>older news</span>
+            </div>
 
-            <ul>
+            <ul class="news_list">
                 <li><span class="news_date">2020.12.18</span><span class="news_text">Update information on "LUXE (tcd022)"</span></li>
                 <li><span class="news_date">2020.09.18</span><span class="news_text"></span>Custom post ype "Announcement" in available.</li>
                 <li><span class="news_date">2020.08.12</span><span class="news_text">WordPress theme "LUXE (tcd022)" is released</span></li>
             </ul>
-        </article>
+        </div>
         
-        <div>
-            <img src="images/unnder.png" alt="">
+        <div class="banner">
+            <img src="images/unnder.png" alt="バナー">
         </div>
     </footer>
     
